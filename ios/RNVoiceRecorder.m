@@ -52,7 +52,7 @@ RCT_EXPORT_METHOD(Record:(nonnull NSDictionary *)props onDone:(RCTResponseSender
     //    controller.highlightedTintColor = [UIColor orangeColor];
 
     if ([format isEqualToString: @"wav"]) {
-        _recorder.audioFormat = IQAudioFormat_wav;
+        _recorder.audioFormat = IQAudioFormat_caf;
     }
     
     [self presentBlurredAudioRecorderViewControllerAnimated:_recorder];
@@ -76,7 +76,7 @@ RCT_EXPORT_METHOD(Play:(nonnull NSDictionary *)props onDone:(RCTResponseSenderBl
     //    controller.highlightedTintColor = [UIColor orangeColor];
     
     if ([format isEqualToString: @"wav"]) {
-        _recorder.audioFormat = IQAudioFormat_wav;
+        _recorder.audioFormat = IQAudioFormat_caf;
     }
     
     [self presentBlurredAudioCropperViewControllerAnimated:_recorder];
